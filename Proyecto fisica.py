@@ -419,9 +419,24 @@ while True:
             # DIBUJAR INPUTS SOLO DEL MODO
             # =========================
             if modo == 1:
+                screen.blit(font.render(
+                    "Problema: Dos masas cuelgan de una polea ideal.",
+                    True, (0, 0, 0)), (20, 140))
+
+                screen.blit(font.render(
+                    "Ingrese m1 y m2 para calcular aceleración y tensión.",
+                    True, (0, 0, 0)), (20, 170))
                 for c in campos_polea:
                     c.draw()
+
             else:
+                screen.blit(font.render(
+                    "Problema: Dos bloques están en contacto.",
+                    True, (0, 0, 0)), (20, 140))
+
+                screen.blit(font.render(
+                    "Ingrese masas y fuerza para calcular a y F_BA.",
+                    True, (0, 0, 0)), (20, 170))
                 for c in campos_tercera:
                     c.draw()
 
